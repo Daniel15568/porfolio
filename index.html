@@ -3,67 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio of Daniel Emakporuena">
-    <title>Daniel Portfolio</title>
+    <title>Daniel Emakporuena | Data Analyst</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="./assets/square_logo.png" type="image/x-icon">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("W8KK0-Rh9tWIw9Fik");
+    })();
+    </script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Daniel Ema</h1>
-            <p>Web Developer | Designer | Problem Solver</p>
-            <button id="toggle-dark-mode">Toggle Dark Mode</button>
-        </div>
+        <nav>
+            <div class="header">
+                <div class="logo">
+                    <img src="./assets/lza_logo.png" alt="Daniel Emakporuena">
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi, I'm [Your Name], a passionate web developer with a love for crafting modern and responsive websites. I enjoy building projects that provide great user experiences and solve real-world problems.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>A brief description of the project and what technologies you used.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>A brief description of the project and what technologies you used.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>A brief description of the project and what technologies you used.</p>
-                    <a href="#" target="_blank">View Project</a>
+    <main>
+        <section id="profile">
+            <div class="section_pic_container">
+                <img src="./assets/profile.png" alt="Daniel Emakporuena Profile Picture" />
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title_1">Daniel Emakporuena</h1>
+                <p class="section_text_p2">Data Analyst</p>
+                <div class="btn_container">
+                    <button class="btn_color" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-links">
-                <a href="mailto:youremail@gmail.com" target="_blank">Email</a>
-                <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a>
-                <a href="https://medium.com/@yourusername" target="_blank">Medium</a>
+        </section>
+        <section id="about">
+            <p class="section_text_p1">Get To Know More</p>
+            <h1 class="title_2">About Daniel Emakporuena</h1>
+            <div class="text_container">
+                <p>From a young age, I liked the idea of becoming an electrical engineer, captivated by the intricate dance of circuits and the power of innovation. However, my exceptional scores in mathematics naturally led me to pivot toward a path where I knew I could excel naturally. This decision guided me to pursue a bachelor's degree in mathematics—a field that allowed me to explore my passion for logical reasoning and problem-solving.</p>
+                <p>Mathematics became my canvas, where I could paint solutions to complex challenges and innovate in ways that excited me. My desire to create meaningful change ultimately led me to a master’s in data science, a perfect blend of my mathematical background, my analytical drive, and my vision for impactful innovation with the most recent of technologies.</p>
+                <p>Now, as a data analyst, I thrive on transforming raw data into actionable insights that drive business impact. Each project is an opportunity to unleash my creativity, whether I’m diving into new data libraries, exploring new research projects, or simply enjoying personal time in nature to recharge. I love unraveling patterns and discovering stories within the data that inform decisions and spark new ideas.</p>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Add JavaScript file -->
+        </section>
+        <section id="projects">
+            <h1 class="title_2">Projects</h1>
+            <p>No projects available at the moment.</p>
+        </section>
+        <section id="contact">
+            <h1 class="title_2">Contact Me</h1>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Connect with Me</h2>
+                    <div class="info-item">
+                        <a href="https://www.linkedin.com/in/daniel15568" target="_blank">
+                            <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
+                        </a>
+                        <p>LinkedIn</p>
+                    </div>
+                    <div class="info-item">
+                        <a href="https://github.com/Daniel15568" target="_blank">
+                            <img src="./assets/github.jpg" alt="GitHub Icon" class="icon contact-icon" />
+                        </a>
+                        <p>GitHub</p>
+                    </div>
+                    <div class="info-item">
+                        <a href="mailto:danielemakporuena.com">
+                            <img src="./assets/email-icon.png" alt="Email Icon" class="icon contact-icon" />
+                        </a>
+                        <p>Email</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright &#169; 2024 Daniel Emakporuena. All Rights Reserved.</p>
+        </footer>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
