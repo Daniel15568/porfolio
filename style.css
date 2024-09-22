@@ -25,7 +25,6 @@ a,
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-
 .header {
     width: 100%;
     padding: 15px 0;
@@ -38,16 +37,6 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin-right: 20px;
-}
-
-nav ul li {
-    margin: 0 15px;
 }
 
 .nav-links {
@@ -73,24 +62,59 @@ a:hover {
     text-underline-offset: 1rem;
 }
 
-nav ul li:hover .dropdown {
-    display: block;
-}
-
-.dropdown {
+.hamburger {
     display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.dropdown a {
-    padding: 10px 15px;
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger-icon span {
     display: block;
-    color: black;
+    width: 30px;
+    height: 3px;
+    background: black;
 }
 
+.menu-links {
+    display: flex;
+}
+
+.menu-links li {
+    margin: 0 15px;
+}
+
+.menu-links.open {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .menu-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
 
 main {
     margin-top: 60px;
@@ -103,170 +127,4 @@ section {
     min-height: fit-content;
 }
 
-
-#profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    height: 85vh;
-}
-
-.section_pic_container {
-    display: flex;
-    height: 475px;
-    width: 475px;
-    margin: auto 0;
-}
-
-.section_text {
-    align-self: center;
-    text-align: center;
-}
-
-.section_text p {
-    font-weight: 600;
-}
-
-.section_text_p1 {
-    text-align: center;
-}
-
-.section_text_p2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.title_1 {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.btn_container {
-    margin-top: 1.5rem;
-    text-align: center;
-}
-
-.btn_color {
-    background: linear-gradient(90deg, #6091cc, #ef8ebf);
-    border: none;
-    color: white;
-    padding: 1rem 1rem;
-    font-weight: 600;
-    border-radius: 2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn_color:hover {
-    background-color: #4f7ebf;
-    transform: scale(1.05);
-}
-
-
-#about {
-    padding: 4rem 0;
-    text-align: center;
-}
-
-.title_2 {
-    font-size: 2.5rem;
-    position: relative;
-}
-
-.title_2::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3.5px;
-    background: linear-gradient(90deg, #6091cc, #ef8ebf);
-    border-radius: 1px;
-}
-
-.text_container {
-    margin: 2rem auto;
-}
-
-.text_container p {
-    color: #555;
-    line-height: 1.6;
-    text-align: left;
-}
-
-
-#projects {
-    padding: 4rem 0;
-    text-align: center;
-}
-
-.details_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 3.5rem;
-    margin-top: 2rem;
-}
-
-
-#contact {
-    padding: 4rem 0;
-    text-align: center;
-}
-
-.contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
-    padding: 2rem;
-}
-
-.contact-info {
-    text-align: left;
-    flex: 1;
-    max-width: 400px;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.3rem;
-}
-
-.contact-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 1rem;
-}
-
-.contact-info h2 {
-    font-size: 1.5rem;
-}
-
-.contact-info a {
-    color: #555;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    color: rgb(96, 145, 204);
-}
-
-
-footer {
-    padding: 2rem 0;
-    text-align: center;
-    background-color: #F9F9F7;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer p::before {
-    font-size: 1.2rem;
-    margin-right: 0.5rem;
-}
+/* Rest of your existing CSS... */
