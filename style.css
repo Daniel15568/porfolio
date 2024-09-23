@@ -131,9 +131,16 @@ section {
 
 .section_pic_container {
     display: flex;
-    height: 475px;
-    width: 475px;
+    height: auto;
+    width: 100%;
+    max-width: 475px;
     margin: auto 0;
+}
+
+.section_pic_container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .section_text {
@@ -269,7 +276,6 @@ section {
     color: rgb(96, 145, 204);
 }
 
-/* Footer styles */
 footer {
     padding: 2rem 0;
     text-align: center;
@@ -298,7 +304,22 @@ footer p::before {
         justify-content: space-between;
     }
 
+    #profile {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .section_pic_container {
+        width: 70%;
+        max-width: 300px;
+    }
+
     section {
-        margin: 0 2rem; 
+        margin: 0 1rem;
+    }
+
+    .text_container p {
+        text-align: center;
     }
 }
