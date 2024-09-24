@@ -1,0 +1,164 @@
+@media (max-width: 1024px) {
+
+    #profile {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .section_pic_container {
+        height: 250px;
+        width: 250px;
+    }
+
+    .section_text {
+        text-align: center;
+    }
+
+    #about {
+        padding: 2rem 1rem;
+    }
+
+    .text_container {
+        padding: 0 1rem;
+    }
+
+    #projects {
+        padding: 2rem 1rem;
+    }
+
+    .social-icons {
+        gap: 1.5rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu-links {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu-links.open {
+        padding-top: 10px;
+    }
+
+    #profile {
+        padding: 1.5rem 1rem;
+    }
+
+    .section_pic_container {
+        height: 200px;
+        width: 200px;
+    }
+
+    .title_1 {
+        font-size: 2rem;
+    }
+
+    #about {
+        padding: 2rem 1rem;
+    }
+
+    #projects {
+        padding: 2rem 1rem;
+    }
+
+    .social-icons {
+        gap: 1rem;
+    }
+
+    .contact-icon {
+        width: 35px;
+    }
+
+    footer {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 479px) {
+    /* Header */
+    .header {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .logo img {
+        width: 35px;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+    .menu-links {
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .menu-links.open {
+        padding-top: 5px;
+    }
+
+    #profile {
+        padding: 1rem 0.5rem;
+    }
+
+    .section_pic_container {
+        height: 150px;
+        width: 150px;
+    }
+
+    .title_1 {
+        font-size: 1.5rem;
+    }
+
+    #about {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .text_container {
+        padding: 0 0.5rem;
+    }
+
+    #projects {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .social-icons {
+        gap: 0.75rem;
+    }
+
+    .contact-icon {
+        width: 30px;
+    }
+
+    footer {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
