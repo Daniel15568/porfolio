@@ -10,6 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f7;
 }
 
 html {
@@ -44,7 +45,7 @@ nav .hamburger {
     background: none;
     border: none;
     cursor: pointer;
-    display: none; 
+    display: flex;
 }
 
 .hamburger-icon {
@@ -107,18 +108,18 @@ section {
 }
 
 .menu-links {
-    display: none; 
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; 
-    right: 20px; 
+    top: 60px;
+    right: 20px;
     background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
 
 .menu-links.open {
-    display: flex; 
+    display: flex;
 }
 
 #profile {
@@ -293,11 +294,11 @@ footer p::before {
 
 @media (max-width: 768px) {
     .menu-links {
-        display: none; 
+        display: none;
     }
 
     .hamburger {
-        display: block; 
+        display: block;
     }
 
     .header {
@@ -323,3 +324,4 @@ footer p::before {
         text-align: center;
     }
 }
+

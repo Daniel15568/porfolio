@@ -1,5 +1,4 @@
 @media (max-width: 1024px) {
-
     #profile {
         flex-direction: column;
         padding: 2rem 1rem;
@@ -36,15 +35,10 @@
 }
 
 @media (max-width: 767px) {
-
     .header {
         flex-direction: column;
         align-items: center;
         padding: 10px;
-    }
-
-    .logo img {
-        width: 40px;
     }
 
     .hamburger {
@@ -98,14 +92,9 @@
 }
 
 @media (max-width: 479px) {
-    /* Header */
     .header {
         flex-direction: column;
         padding: 5px;
-    }
-
-    .logo img {
-        width: 35px;
     }
 
     .hamburger {
