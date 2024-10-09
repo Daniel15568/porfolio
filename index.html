@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Emakporuena | Data Analyst</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="icon" href="./assets/square_logo.png" type="image/x-icon">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("W8KK0-Rh9tWIw9Fik");
-        })();
-    </script>
 </head>
 <body>
     <header>
@@ -36,66 +28,59 @@
     <main>
         <section id="profile">
             <div class="section_pic_container">
-                <img src="./assets/prof.png" alt="Daniel Emakporuena Profile Picture" />
+                <img src="./assets/profile.jpg" alt="Daniel Emakporuena Profile Picture" />
             </div>
             <div class="section_text">
                 <p class="section_text_p1">Hello, I'm</p>
                 <h1 class="title_1">Daniel Emakporuena</h1>
                 <p class="section_text_p2">Data Analyst</p>
                 <div class="btn_container">
-                    <button class="btn_color" onclick="location.href='./#contact'">
+                    <button class="btn_color" onclick="scrollToSection('footer')">
                         Contact Info
                     </button>
                 </div>
             </div>
         </section>
+
         <section id="about">
-            <p class="section_text_p1">About Me</p>
+            <h2 class="title_2">About Me</h2>
             <div class="text_container">
                 <p>From a young age, I liked the idea of becoming an electrical engineer, captivated by the intricate dance of circuits and the power of innovation. However, my exceptional scores in mathematics naturally led me to pivot toward a path where I knew I could excel naturally. This decision guided me to pursue a bachelor's degree in mathematics—a field that allowed me to explore my passion for logical reasoning and problem-solving.</p>
                 <p>Mathematics became my canvas, where I could paint solutions to complex challenges and innovate in ways that excited me. My desire to create meaningful change ultimately led me to a master’s in data science, a perfect blend of my mathematical background, my analytical drive, and my vision for impactful innovation with the most recent of technologies.</p>
                 <p>Now, as a data analyst, I thrive on transforming raw data into actionable insights that drive business impact. Each project is an opportunity to unleash my creativity, whether I’m diving into new data libraries, exploring new research projects, or simply enjoying personal time in nature to recharge. I love unraveling patterns and discovering stories within the data that inform decisions and spark new ideas.</p>
             </div>
         </section>
+
         <section id="projects">
-            <h1 class="title_2">Projects</h1>
-            <p>No projects available at the moment.</p>
-        </section>
-        <section id="contact">
-            <h1 class="title_2">Contact Me</h1>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Connect with Me</h2>
-                    <div class="info-item">
-                        <a href="https://www.linkedin.com/in/daniel15568" target="_blank">
-                            <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
-                        </a>
-                        <p>LinkedIn</p>
-                    </div>
-                    <div class="info-item">
-                        <a href="https://github.com/Daniel15568" target="_blank">
-                            <img src="./assets/github_logo.png" alt="GitHub Icon" class="icon contact-icon" />
-                        </a>
-                        <p>GitHub</p>
-                    </div>
-                    <div class="info-item">
-                        <a href="mailto:danielemakporuena.com">
-                            <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon" />
-                        </a>
-                        <p>Email</p>
-                    </div>
-                </div>
+            <div class="btn_container">
+                <button class="btn_color" onclick="location.href='projects.html'">
+                    View My Projects
+                </button>
             </div>
         </section>
-        <footer>
-            <p>Copyright &#169; 2024 Daniel Emakporuena. All Rights Reserved.</p>
-        </footer>
     </main>
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.menu-links');
-            menu.classList.toggle('open');
-        }
-    </script>
+    
+    <footer id="footer">
+        <div class="social-media">
+            <p>Connect with Me:</p>
+            <div class="social-icons">
+                <a href="https://github.com/Daniel15568" target="_blank">
+                    <img src="./assets/github_logo.png" alt="GitHub" width="40" height="40">
+                </a>
+                <a href="mailto:danielemakporuena.com">
+                    <img src="./assets/email.png" alt="Email" width="40" height="40">
+                </a>
+                <a href="https://www.linkedin.com/in/daniel15568" target="_blank">
+                    <img src="./assets/linkedin.png" alt="LinkedIn" width="40" height="40">
+                </a>
+            </div>
+        </div>
+    
+        <p>Copyright &#169; 2024 Daniel Emakporuena. All Rights Reserved.</p>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
