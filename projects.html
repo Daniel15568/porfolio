@@ -1,1 +1,125 @@
-!DOCTYPE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Daniel Emakporuena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header">
+                <ul class="menu-links">
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="projects.html" class="active">My Works</a></li>
+                    <li><a href="mailto:danielemakporuena1@gmail.com">Email Me</a></li>
+                </ul>
+                <button class="hamburger" onclick="toggleMenu()">
+                    <div class="hamburger-icon-box">
+                        <div class="hamburger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>            
+        <section id="projects">
+            <h1 class="section-title">Projects</h1>
+            
+            <section id="dashboards">
+                <p>Here is a collection of my projects focused on data science and AI with a few </p>
+                <p></p>
+                <p></p>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <img src="assets/projects/analysis tag.jpg" alt="Sales Dashboard">
+                        <div class="project-info">
+                            <h3>PowerBI Reports</h3>
+                            <p>This covers all my interactive report projects done with powerBI, you'll need a powerBI account to interact with these.  </p>
+                            <a href="https://www.novypro.com/profile_projects/danieljohnson" class="btn_color">View Reports</a>
+                        </div>
+                    </div>
+            
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>🍄 Mushroom Classification: Predicting Edible or Poisonous Mushrooms!</h3>
+
+                            <p>In this project, I participated in a Kaggle competition where the goal was to predict whether a mushroom is edible (e) or poisonous (p) based on its physical characteristics. I explored several advanced machine learning models, including XGBoost, LightGBM, and Random Forest, with XGBoost achieving a remarkable 98% accuracy! 🚀</p>
+                            <a href="https://github.com/Daniel15568/Binary-Prediction-of-Poisonous-Mushrooms" class="btn_color">See Repo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Data Analysis Made Simple with Data-Cent</h3>
+
+                            <p> Data-Cent is an open source Streamlit and Python-powered platform designed to help analysts and students perform seamless data exploration. Featuring interactive Plotly dashboards and preset Matplotlib plots for quick EDA, users can analyse preloaded datasets or upload their own data for customised insights. Whether you're a beginner or an experienced analyst, Data-Cent simplifies the data discovery process.</p>
+                            <p>Careful, you'll need to wake up this giant. 😉</p>
+                            <a href="https://data-cent.streamlit.app" class="btn_color">Try App</a>
+                            <a href="https://data-cent.streamlit.app" class="btn_color">See Repo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Dog Breed Classification with Deep Learning</h3>
+
+                            <p>This project involves building a deep learning model to classify dog breeds using image data. Leveraging transfer learning with TensorFlow and a pre-trained MobileNetV2 model, the system can accurately identify over 120 dog breeds from a dataset of 10,000+ images. The model is designed to handle both preloaded data and custom user inputs, making it versatile for real-world applications. The project demonstrates strong performance in image classification, achieving high accuracy on both validation and unseen data.</p>
+                            <p>Careful, you'll need to wake up this giant. 😉</p>
+                            <a href="https://huggingface.co/spaces/daniel15568/Dog-Breed-Classification" class="btn_color">Try App</a>
+                            <a href="https://github.com/Daniel15568/Dog-Breeds-Classification-with-CNN" class="btn_color">See Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <h1 class="section-title">Research and Articles</h1>
+            <section id="research">
+                <p>Here is a collection of my Articles and studies focused on data science and AI.</p>
+                <ul class="research-list">
+                    <li><strong><a href="https://medium.com/@danielemakporuena1/my-thoughts-on-pyforest-easy-or-just-bad-practice-66112c812318" target="_blank">My Thoughts on PyForest — Easy or Just Bad Practice?:</a></strong> PyForest simplifies data science coding by automatically importing popular libraries like pandas and seaborn, making exploratory analysis faster and cleaner. Its main benefits include convenience, time-saving, and reduced clutter in code.
+
+                        However, it has drawbacks such as hiding dependencies, risking namespace conflicts, and reducing educational value. For quick analysis, PyForest is useful, but for production code and learning, explicit imports are better for clarity and maintainability. Use it in the early stages, but switch to explicit imports for long-term projects..</li>
+                    <li><strong><a href="https://medium.com/@danielemakporuena1/hyperparameters-tuning-randomizedsearchcv-vs-gridsearchcv-which-is-better-f71c5fd5fe66" target="_blank">Hyperparameters Tuning — RandomizedSearchCV vs GridSearchCV, which is better?:</a></strong> This article compares GridSearchCV and RandomizedSearchCV for tuning a Random Forest Classifier using a synthetic dataset.
+
+                        GridSearchCV performs an exhaustive search, ensuring thoroughness but at high computational cost. RandomizedSearchCV samples fewer combinations, offering faster results with similar performance.
+                        
+                        Both methods produced comparable results, but RandomizedSearchCV is more efficient for larger parameter spaces, making it the preferred choice for practical use.</li>
+                    <li><strong><a href="https://rgdoi.net/10.13140/RG.2.2.27816.58883" target="_blank">Multifactorial Analysis of wildfire occurrences and causes:</a></strong> This research explores the use of machine learning and spatial analysis to improve wildfire prediction and management in England. By integrating environmental factors, human behaviors, and spatial dynamics, the study analysed data from multiple sources to create a multivariate dataset. Using advanced models like Random Forest, XGB, LGBM, and FNN, the research aimed to better understand wildfire risk and support evidence-based decision-making for more effective wildfire management.</li>
+                    <li><strong><a href="https://rgdoi.net/10.13140/RG.2.2.26822.24640" target="_blank">Analysis on Big Data and A.I for Future Crime Predictions:</a></strong> This report examines the increasing use of Big Data and AI in crime prediction and prevention, drawing parallels to the film Minority Report. Similar to the movie's concept of "pre-crime," advanced algorithms analyze vast datasets to predict criminal activity and help law enforcement allocate resources more effectively, potentially lowering crime rates and enhancing public safety. However, like in the film, this approach raises concerns about reliability, ethics, legal implications, and public privacy, which are critical to address for responsible implementation.</li>
+                    
+
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="social-media">
+            <p>Connect with Me:</p>
+            <div class="social-icons">
+                <a href="https://github.com/Daniel15568" target="_blank">
+                    <img src="./assets/github_logo.png" alt="GitHub">
+                </a>
+                <a href="mailto:danielemakporuena1@gmail.com">
+                    <img src="./assets/email.png" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/daniel15568" target="_blank">
+                    <img src="./assets/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+        <div class="line">
+            <small>© Made by Me in 2024, No rights reserved. 🤩 </small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
