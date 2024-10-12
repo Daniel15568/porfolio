@@ -384,7 +384,7 @@ footer .line {
 
 .research-list li {
     margin-bottom: 10px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #555;
 }
 
@@ -426,7 +426,7 @@ footer .line {
 .project-info p {
     color: #555;
     margin-bottom: 20px;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 
 .project-card:hover {
