@@ -430,3 +430,10 @@ footer .line {
 .project-card:hover {
     transform: scale(1.05);
 }
+
+a:link,
+a:visited {
+    color: blue;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
