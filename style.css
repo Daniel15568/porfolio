@@ -350,6 +350,7 @@ footer .line {
         text-align: center;
     }
     
+    
 }
 
 #projects {
@@ -425,6 +426,7 @@ footer .line {
 .project-info p {
     color: #555;
     margin-bottom: 20px;
+    font-size: 0.7em;
 }
 
 .project-card:hover {
