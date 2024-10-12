@@ -431,9 +431,8 @@ footer .line {
     transform: scale(1.05);
 }
 
-a:link,
-a:visited {
-    color: blue;
-    padding: 10px;
-    transition: background-color 0.3s ease;
+#research a:link,
+#research a:visited {
+    color: blue; 
+    transition: color 0.3s ease;
 }
