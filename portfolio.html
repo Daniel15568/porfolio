@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Daniel Emakporuena</title>
+  <meta name="description" content="Projects by Daniel Emakporuena: dashboards, Power BI, Python, machine learning, and research publications." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">
+          <strong>Daniel Emakporuena</strong>
+          <small>Data · Power BI · SQL · Python</small>
+        </span>
+      </a>
+
+      <button class="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a class="btn btn--primary" href="index.html">Home</a>
+        <a class="btn btn--primary nav__active" href="projects.html">Projects</a>
+        <a class="btn btn--primary" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h1 class="pageTitle">Portfolio</h1>
+            <p class="muted">These are my analysis that includes a story in the form of an article behind the data and recommendations where neccessary.</p>
+          </div>
+        </div>
+
+
+        <div class="stack" id="projectStack">
+  <!-- Featured case study -->
+            <article class="tile projectCard">
+                <h3>Sales Intelligence Story</h3>
+                <p class="muted">
+                From revenue growth to profitable growth, with discount pressure, returns risk, operational recovery, and loyalty scale.
+                </p>
+                <div class="tagRow">
+                <span class="tag">Power BI</span><span class="tag">Data Analysis</span><span class="tag">Storytelling</span>
+                </div>
+                <div class="projectActions">
+                <a class="btn btn--classic" href="sales-story.html">Open story</a>
+                </div>
+            </article>
+
+            <article class="tile projectCard">
+                <h3>Binary Prediction of Poisonous Mushrooms</h3>
+                <p class="muted">Classification pipeline and evaluation for predicting poisonous vs edible mushrooms.</p>
+                <div class="tagRow">
+                <span class="tag">Data Analysis</span><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">AI</span>
+                </div>
+                <div class="projectActions">
+                <a class="btn btn--classic" href="https://github.com/Daniel15568/Binary-Prediction-of-Poisonous-Mushrooms" target="_blank" rel="noreferrer">View repo</a>
+                </div>
+            </article>
+            </div>
+    </section>
+    <footer class="footer">
+    <span>© <span id="year"></span> Daniel Emakporuena</span>
+    <a class="muted" href="index.html">Back to home</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

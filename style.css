@@ -585,3 +585,15 @@ h2{ margin: 0; font-size: 18px; letter-spacing: -0.2px; }
   background: rgba(255,255,255,0.10);
   text-decoration: none;
 }
+
+.stack{
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* matches your grid gap */
+}
+
+
+/* Optional: make cards full width nicely */
+.stack .tile {
+  width: 100%;
+}
