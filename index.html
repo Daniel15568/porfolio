@@ -1,122 +1,268 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Emakporuena | Data Specialist</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel Emakporuena | Data Specialist</title>
+  <meta name="description" content="Portfolio of Daniel Emakporuena: Data Analyst and Data Scientist. Power BI, SQL, Python, dashboards, ML projects, and case studies." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="header">
-                <button class="hamburger" onclick="toggleMenu()">
-                    <div class="hamburger-icon-box">
-                        <div class="hamburger-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </button>
-                <ul class="menu-links">
-                    <li><a href="https://www.linkedin.com/in/daniel15568">LinkedIn</a></li>
-                    <li><a href="index.html">Profile Page</a></li>
-                    <li><a href="projects.html">My Works</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="profile">
-            <div class="section_pic_container">
-                <img src="./assets/20241021_091426.jpg" alt="Daniel Emakporuena Profile Picture" />
-            </div>
-            <div class="section_text">
-                <p class="section_text_p1">Hello, I'm</p>
-                <h1 class="title_1">Daniel Emakporuena</h1>
-                <p class="section_text_p2">Data Specialist</p>
-                <div class="btn_container">
-                    <button class="btn_color" onclick="scrollToSection('footer')">
-                        Contact Info
-                    </button>
-                </div>
-            </div>
-        </section>
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">
+          <strong>Daniel Emakporuena</strong>
+          <small>Data · Power BI · SQL · Python</small>
+        </span>
+      </a>
 
-        <section id="about">
-            <h2 class="title_2">About Me</h2>
-            <div class="text_container">
-                <p>From a young age, I liked the idea of becoming an electrical engineer, captivated by the intricate dance of circuits and the power of innovation. However, my exceptional scores in mathematics naturally led me to pivot toward a path where I knew I could excel naturally. This decision guided me to pursue a bachelor's degree in mathematics—a field that allowed me to explore my passion for logical reasoning and problem-solving.</p>
-                <p>Mathematics became my canvas, where I could paint solutions to complex challenges and innovate in ways that excited me. My desire to create meaningful change ultimately led me to a master’s in data science, a perfect blend of my mathematical background, my analytical drive, and my vision for impactful innovation with the most recent of technologies.</p>
-                <p>Now, as a data analyst, I thrive on transforming raw data into actionable insights that drive business impact. Each project is an opportunity to unleash my creativity, whether I’m diving into new data libraries, exploring new research projects, or simply enjoying personal time in nature to recharge. I love unraveling patterns and discovering stories within the data that inform decisions and spark new ideas.</p>
-            </div>
-        </section>
+      <button class="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
 
-        <section id="skills">
-            <h2 class="title_2">Top Skills</h2>
-            <p class="skills-intro">These are what I am good at:</p>
-            <div class="skills-container">
-                <div class="skill-box centered-skill-box">
-                    <img src="./assets/front-end-web-development.png" alt="Sales Analysis Icon" width="50" height="50">
-                    <h3>Sales Analysis</h3>
-                    <p>With over a year of experience in sales and marketing, I’ve used data to drive real improvements in sales. Analysing sales data, I identify trends, forecast future sales, and adjust strategies to boost results. I have increased sales revenue by over 10% in a calendar year at my previous organisation. I’m confident I can bring this same expertise to your organisation, helping you find new opportunities and achieve even better success.</p>
-                    <p><strong>Tools:</strong> Excel, Power BI, SQL, Python (Pandas)</p>
-                </div>
+      <nav class="nav" id="nav">
+        <a class="btn btn--primary" href="#about">About</a>
+        <a class="btn btn--primary" href="#featured">Featured</a>
+        <a class="btn btn--primary" href="projects.html">Projects</a>
+        <a class="btn btn--primary" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-                <div class="skill-box">
-                    <img src="./assets/data-visualization.png" alt="Data Analysis Icon" width="50" height="50">
-                    <h3>Data Analysis</h3>
-                    <p>I uncover hidden insights and patterns within your data to identify trends and opportunities for data-driven decision-making. I then create visual narratives through interactive dashboards, clear reports, and tailored slides for stakeholders, turning complex data into engaging visuals that help you make informed decisions and drive smarter strategies.</p>
-                    <p><strong>Tools:</strong> Python (Pandas, Matplotlib, Plotly), Excel, PowerBI</p>
-                </div>
-                <div class="skill-box">
-                    <img src="./assets/data-analytics.png" alt="Data Analytics Icon" width="50" height="50">
-                    <h3>Machine Learning and AI</h3>
-                    <p>I can use advanced analytics, predictive models, and machine learning to help you predict outcomes and optimise processes. With deep learning and natural language processing, I can extract insights from your data, anticipate trends, and fine-tune decisions to ensure smoother operations and better business results.</p>
-                    <p><strong>Tools:</strong> Python (Pandas, scikit-learn, Tensorflow, Transformers)</p>
-                </div>                
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Analytics that drive decisions, data science that scales outcomes</h1>
+          <p class="lead">
+            I build dashboards and KPI frameworks that stakeholders trust, and I develop data science solutions
+            that turn patterns into predictive and measurable impact.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="projects.html">Explore projects</a>
+            <a class="btn btn--ghost" href="#featured">View featured case study</a>
+          </div>
+
+          <div class="chipRow" aria-label="Core skills">
+            <span class="chip">Power BI</span>
+            <span class="chip">DAX</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Power Query</span>
+            <span class="chip">Python</span>
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Data Storytelling</span>
+            <span class="chip">AI</span>
+            <span class="chip">MS Excel</span>
+            <span class="chip">Azure Data Studio</span>
+          </div>
+
+          <div class="trustRow">
+            <div class="trustCard">
+              <b>End to end</b>
+              <span>From raw data to actions</span>
             </div>
-        </section>
-        
-        
-        
-        <section id="projects">
-            <div class="btn_container">
-                <button class="btn_color" onclick="location.href='projects.html'">
-                    View My Works
-                </button>
-            </div>
-        </section>
-    </main>
-    
-    <footer id="footer">
-        <div class="social-media">
-            <h2 class="connect">Connect with Me</h2>
-            <div class="social-icons">
-                <a href="https://github.com/Daniel15568" target="_blank">
-                    <img src="./assets/github_logo.png" alt="GitHub" width="40" height="40">
-                </a>
-                <a href="mailto:danielemakporuena.com">
-                    <img src="./assets/email.png" alt="Email" width="40" height="40">
-                </a>
-                <a href="https://www.linkedin.com/in/daniel15568" target="_blank">
-                    <img src="./assets/linkedin.png" alt="LinkedIn" width="40" height="40">
-                </a>
-            </div>
+          </div>
         </div>
-        <div class="line">
-            <div class="container">
-                <small class="bootscore-copyright">
-                    <span class="cr-symbol">©</span>&nbsp;Made by Me, No rights reserved 🤩.
-                </small>
-            </div>
-        </div>    
-    </footer>
-    
-    
 
-    <script src="script.js"></script>
+        <aside class="heroCard">
+          <h2>Quick links</h2>
+          <p class="muted">Replace these with your real links.</p>
+
+          <div class="linkGrid">
+            <a class="linkCard" href="projects.html">
+              <b>Projects</b><span class="muted">Case studies and repos</span>
+            </a>
+            <a class="linkCard" href="sales-story.html">
+              <b>Featured story</b><span class="muted">Sales intelligence</span>
+            </a>
+            <a class="linkCard" href="https://github.com/Daniel15568" target="_blank" rel="noreferrer">
+              <b>GitHub</b><span class="muted">Repositories</span>
+            </a>
+            <a class="linkCard" href="#contact">
+              <b>Contact</b><span class="muted">Email and links</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2>About Me</h2>
+            <p class="muted">A short story of how I got into data.</p>
+          </div>
+        </div>
+
+        <article class="case">
+          <div class="case__body">
+            <p class="lead">
+              From a young age, I liked the idea of becoming an electrical engineer, captivated by the intricate dance of circuits
+              and the power of innovation. However, my exceptional scores in mathematics naturally led me to pivot toward a path
+              where I knew I could excel naturally. This decision guided me to pursue a bachelor's degree in mathematics, a field
+              that allowed me to explore my passion for logical reasoning and problem-solving.
+            </p>
+            <p class="muted">
+              Mathematics became my canvas, where I could paint solutions to complex challenges and innovate in ways that excited me.
+              My desire to create meaningful change ultimately led me to a master’s in data science, a perfect blend of my mathematical
+              background, my analytical drive, and my vision for impactful innovation with the most recent of technologies.
+            </p>
+            <p class="muted">
+              Now, as a data analyst, I thrive on transforming raw data into actionable insights that drive business impact. Each
+              project is an opportunity to unleash my creativity, whether I’m diving into new data libraries, exploring new research
+              projects, or simply enjoying personal time in nature to recharge. I love unraveling patterns and discovering stories
+              within the data that inform decisions and spark new ideas.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills (uses your current text + your assets icons) -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2>Top Skills</h2>
+            <p class="muted">These are what I am good at:</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <!-- Sales Analysis -->
+          <article class="tile">
+            <div class="skillIcon">
+              <img src="assets/front-end-web-development.png" alt="Sales Analysis icon" loading="lazy" />
+            </div>
+            <h3>Sales Analysis</h3>
+            <p class="muted">
+              With over a year of experience in sales and marketing, I’ve used data to drive real improvements in sales.
+              Analysing sales data, I identify trends, forecast future sales, and adjust strategies to boost results.
+              I have increased sales revenue by over 10% in a calendar year at my previous organisation. I’m confident
+              I can bring this same expertise to your organisation, helping you find new opportunities and achieve even
+              better success.
+            </p>
+            <p><strong>Tools:</strong> Excel, Power BI, SQL, Python (Pandas)</p>
+          </article>
+
+          <!-- Data Analysis -->
+          <article class="tile">
+            <div class="skillIcon">
+              <img src="assets/data-visualization.png" alt="Data Analysis icon" loading="lazy" />
+            </div>
+            <h3>Data Analysis</h3>
+            <p class="muted">
+              I uncover hidden insights and patterns within your data to identify trends and opportunities for data-driven
+              decision-making. I then create visual narratives through interactive dashboards, clear reports, and tailored
+              slides for stakeholders, turning complex data into engaging visuals that help you make informed decisions and
+              drive smarter strategies.
+            </p>
+            <p><strong>Tools:</strong> Python (Pandas, Matplotlib, Plotly), Excel, PowerBI</p>
+          </article>
+
+          <!-- Machine Learning and AI -->
+          <article class="tile">
+            <div class="skillIcon">
+              <img src="assets/data-analytics.png" alt="Machine Learning and AI icon" loading="lazy" />
+            </div>
+            <h3>Machine Learning and AI</h3>
+            <p class="muted">
+              I can use advanced analytics, predictive models, and machine learning to help you predict outcomes and optimise
+              processes. With deep learning and natural language processing, I can extract insights from your data, anticipate
+              trends, and fine-tune decisions to ensure smoother operations and better business results.
+            </p>
+            <p><strong>Tools:</strong> Python (Pandas, scikit-learn, Tensorflow, Transformers)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2>Featured case study</h2>
+            <p class="muted">Power BI style story with visuals that explain decisions.</p>
+          </div>
+          <a class="btn btn--ghost" href="sales-story.html">Open full story</a>
+        </div>
+
+        <article class="tile tile--featured">
+          <div>
+            <h3>From Revenue Growth to Profitable Growth</h3>
+            <p class="muted">
+              A Sales Intelligence story showing how growth can hide margin pressure,
+              and how operations and loyalty restore profitability.
+            </p>
+            <div class="tagRow">
+              <span class="tag">Data Analyst</span>
+              <span class="tag">Power BI style</span>
+              <span class="tag">Storytelling</span>
+              <span class="tag">KPI design</span>
+            </div>
+          </div>
+
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="sales-story.html">Read the case study</a>
+            <a class="btn btn--ghost" href="projects.html">See all projects</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2>Contact</h2>
+            <p class="muted"></p>
+          </div>
+        </div>
+
+        <div class="contact">
+          <div>
+            <h3>Let’s talk</h3>
+            <p class="muted">If you want a dashboard walkthrough or a machine learning project discussion, reach out.</p>
+
+            <!-- Social icons from assets -->
+            <div class="social-icons" aria-label="Social links" style="margin-top: 12px; display:flex; gap:12px; flex-wrap:wrap;">
+              <a href="https://github.com/Daniel15568" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <img src="assets/github_logo.png" alt="GitHub" loading="lazy" style="width:38px; height:auto;" />
+              </a>
+              <a href="mailto:your.email@example.com" aria-label="Email">
+                <img src="assets/email.png" alt="Email" loading="lazy" style="width:38px; height:auto;" />
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <img src="assets/linkedin.png" alt="LinkedIn" loading="lazy" style="width:38px; height:auto;" />
+              </a>
+            </div>
+          </div>
+
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="mailto:your.email@example.com">Email</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn--ghost" href="projects.html">Projects</a>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <span>© <span id="year"></span> Daniel Emakporuena</span>
+          <span class="muted">Built on GitHub Pages</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sales Intelligence Dashboard Case Study | Daniel Emakporuena</title>
+  <meta name="description" content="A Power BI style sales intelligence case study: growth, margin pressure, returns risk, operations recovery, and channel mix improvements." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">
+          <strong>Daniel Emakporuena</strong>
+          <small>Data · Power BI · SQL · Python</small>
+        </span>
+      </a>
+
+      <button class="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a class="btn btn--primary" href="index.html#featured">Home</a>
+        <a class="btn btn--primary" href="projects.html" class="nav__active">Projects</a>
+        <a class="btn btn--primary" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="caseTop">
+          <div>
+            <h1 class="pageTitle">Sales Intelligence Dashboard: From Revenue Growth to Profitable Growth</h1>
+            <p class="muted">
+              This case study shows how a business can grow revenue while profit quality drops, then recover through better
+              discount controls, operational stability, and a healthier channel mix.
+            </p>
+
+            <div class="metaRow">
+              <span class="pill">Power BI style story</span>
+              <span class="pill">Data storytelling</span>
+              <span class="pill">KPI design</span>
+              <span class="pill">Operational insight</span>
+            </div>
+          </div>
+
+          <div class="caseCTA">
+            <a class="btn btn--classic" href="projects.html">Back to Projects</a>
+            <a class="btn btn--primary" href="assets/images/projects/sales-story/01_monthly_sales_profit_dynamic.png">Download main visual</a>
+          </div>
+        </div>
+
+        <!-- HERO IMAGE (smaller, like the example page) -->
+        <figure class="figure figure--hero">
+          <img
+            src="assets/images/projects/sales-story/01_monthly_sales_profit_dynamic.png"
+            alt="Executive view: monthly sales and profit"
+            loading="eager"
+          />
+          <figcaption>Executive overview: Monthly Net Sales and Profit (2024–2025)</figcaption>
+        </figure>
+
+        <article class="caseBody">
+          <h2>Project context</h2>
+          <p>
+            Stakeholders often ask one simple question: “Are we growing?” The problem is that growth can look healthy while the
+            underlying commercial engine becomes fragile. This dashboard is designed to answer a better question:
+            “Are we growing in a way that stays profitable and repeatable?”
+          </p>
+          <p>
+            The story intentionally follows a realistic cycle. The organisation pushes growth, discounts increase to maintain
+            volume, profit quality weakens, returns rise, and operations become the turning point for recovery. The final stage
+            shows the stabilisation pattern you want: healthier margins, better service reliability, and stronger channel balance.
+          </p>
+
+          <div class="callout callout--note">
+            <h3 class="miniTitle">What this dashboard is optimised for</h3>
+            <ul>
+              <li>Fast executive scanning of revenue, profit, and margin quality</li>
+              <li>Early warning signals: discount intensity and return-rate drift</li>
+              <li>Operational levers tied to commercial outcomes</li>
+              <li>Channel strategy decisions, backed by evidence</li>
+            </ul>
+          </div>
+
+          <hr class="rule" />
+
+          <h2>Overview</h2>
+          <p class="muted">
+            Inspired by structured Power BI case studies, each section below explains one part of the dashboard narrative,
+            with smaller supporting screenshots that make the page feel clean and easy to scan. :contentReference[oaicite:1]{index=1}
+          </p>
+
+          <!-- 1 -->
+          <section class="storyBlock">
+            <h3 class="storyTitle">1) Growth was strong, but profit did not scale at the same quality</h3>
+            <p>
+              The first view is deliberately simple: net sales and profit over time. It helps a stakeholder understand the
+              direction of travel in seconds. If both lines move up together, growth is likely sustainable. If sales rise while
+              profit flattens or dips, it signals margin pressure, discount leakage, operational costs, or returns.
+            </p>
+
+            <div class="shotGrid">
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/sales-story/shots/01_sales_profit_focus.png" alt="Sales and profit focus screenshot" loading="lazy" />
+                <figcaption>Focus view: sales line vs profit line</figcaption>
+              </figure>
+
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/sales-story/shots/01_profit_dip_zoom.png" alt="Profit dip zoom screenshot" loading="lazy" />
+                <figcaption>Zoom: profit softening during high-growth period</figcaption>
+              </figure>
+            </div>
+
+            <div class="callout">
+              <h4 class="miniTitle">Interpretation</h4>
+              <p class="muted">
+                This is the moment where leadership usually realises: revenue growth is not the full story. It sets up the need
+                for a second lens: what is causing margin quality to weaken?
+              </p>
+            </div>
+          </section>
+
+          <!-- 2 -->
+          <section class="storyBlock">
+            <h3 class="storyTitle">2) Discount intensity increased and margin compressed</h3>
+            <p>
+              The discount versus margin visual makes the commercial tradeoff obvious. During the growth push, discounting
+              can rise faster than the organisation realises. This is why the dashboard treats discounts as a first-class KPI,
+              not a footnote. When discount intensity climbs, you either need higher retention and repeat purchase to offset it,
+              or you need tighter guardrails.
+            </p>
+
+            <div class="shotGrid">
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/sales-story/shots/02_discount_margin_cluster.png" alt="Discount and margin cluster screenshot" loading="lazy" />
+                <figcaption>Cluster: high discount intensity associated with lower margin</figcaption>
+              </figure>
+
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/sales-story/shots/02_phase_labels.png" alt="Phase label screenshot" loading="lazy" />
+                <figcaption>Phase labels to show how the pattern changes over time</figcaption>
+              </figure>
+            </div>
+
+            <div class="callout">
+              <h4 class="miniTitle">Actionable takeaway</h4>
+              <p class="muted">
+                Introduce discount guardrails tied to margin targets. If discounting must increase, require proof of incremental
+                volume, retention lift, or reduced acquisition cost.
+              </p>
+            </div>
+          </section>
+
+          <!-- 3 -->
+          <section class="storyBlock">
+            <h3 class="storyTitle">3) Returns amplified the margin pressure and exposed regional risk</h3>
+            <p>
+              Returns behave like a silent tax on growth. When returns rise at the same time as discounting, realised value
+              drops twice: you sell at a lower net price and you lose a portion of the transaction altogether. This is why the
+              dashboard surfaces return-rate drift by region, so teams can investigate root causes quickly.
+            </p>
+
+            <div class="shotGrid">
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/sales-story/shots/03_heatmap_focus.png" alt="Return rate heatmap focus screenshot" loading="lazy" />
+                <figcaption>Heatmap: return-rate drift by region and phase</figcaption>
+              </figure>
+
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/sales-story/shots/03_region_callout.png" alt="Regional callout screenshot" loading="lazy" />
+                <figcaption>Callout: region with highest return pressure</figcaption>
+              </figure>
+            </div>
+
+            <div class="callout">
+              <h4 class="miniTitle">What to investigate next</h4>
+              <ul>
+                <li>Product categories driving returns during the high-discount phase</li>
+                <li>Shipping mode or fulfilment delays correlated with returns</li>
+                <li>Regional campaign strategies that attract low-quality demand</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- 4 -->
+          <section class="storyBlock">
+            <h3 class="storyTitle">4) Operational reliability became the recovery lever</h3>
+            <p>
+              The dashboard intentionally links operational performance to commercial outcomes. When on-time delivery improves,
+              satisfaction typically improves as well. That improvement reduces returns, increases repeat purchase, and lets the
+              business reduce discount dependency over time.
+            </p>
+
+            <div class="shotGrid">
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/sales-story/shots/04_ontime_trend.png" alt="On-time delivery trend screenshot" loading="lazy" />
+                <figcaption>Trend: on-time delivery improvement</figcaption>
+              </figure>
+
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/sales-story/shots/04_satisfaction_trend.png" alt="Satisfaction trend screenshot" loading="lazy" />
+                <figcaption>Trend: satisfaction stabilising after operational recovery</figcaption>
+              </figure>
+            </div>
+
+            <div class="callout">
+              <h4 class="miniTitle">Why this matters to leadership</h4>
+              <p class="muted">
+                Operations is not only a cost centre. It is a commercial lever. When reliability improves, margin quality can
+                recover without needing aggressive pricing tactics.
+              </p>
+            </div>
+          </section>
+
+          <!-- 5 -->
+          <section class="storyBlock">
+            <h3 class="storyTitle">5) Channel mix matured into a stronger model</h3>
+            <p>
+              The channel mix view is about sustainability. Strong performance is rarely dependent on a single channel. The
+              later phase indicates a more stable balance. In a real Power BI dashboard, this is where leaders decide where to
+              allocate budget, which channels to scale, and which ones to treat cautiously.
+            </p>
+
+            <div class="shotGrid">
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/sales-story/shots/05_mix_overview.png" alt="Channel mix overview screenshot" loading="lazy" />
+                <figcaption>Mix: revenue distribution across channels</figcaption>
+              </figure>
+
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/sales-story/shots/05_mix_change.png" alt="Channel mix change screenshot" loading="lazy" />
+                <figcaption>Change view: how the mix shifts across phases</figcaption>
+              </figure>
+            </div>
+
+            <div class="callout">
+              <h4 class="miniTitle">Decision support</h4>
+              <ul>
+                <li>Scale the channels that retain customers and preserve margin</li>
+                <li>Review channels that require deep discounts to hold volume</li>
+                <li>Use mix shifts as an early indicator of strategy drift</li>
+              </ul>
+            </div>
+          </section>
+
+          <hr class="rule" />
+
+          <h2>Summary: what this dashboard proves</h2>
+          <div class="twoCol">
+            <div class="callout">
+              <h3 class="miniTitle">Executive conclusions</h3>
+              <ul>
+                <li>Revenue growth can hide margin compression</li>
+                <li>Discount intensity is a leading indicator, not an afterthought</li>
+                <li>Returns amplify margin pressure and show where quality demand breaks</li>
+                <li>Operational reliability supports satisfaction and profit recovery</li>
+                <li>A healthier channel mix improves stability over time</li>
+              </ul>
+            </div>
+
+            <div class="callout">
+              <h3 class="miniTitle">Recommended next steps</h3>
+              <ul>
+                <li>Introduce margin-based discount guardrails and monitor leakage</li>
+                <li>Create a returns root-cause view by product, region, and shipping mode</li>
+                <li>Track on-time delivery as a commercial KPI</li>
+                <li>Adopt a channel strategy scorecard: margin, retention, and returns risk</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ctaRow" style="margin-top: 14px;">
+            <a class="btn btn--primary" href="projects.html">Explore more projects</a>
+            <a class="btn btn--classic" href="index.html#contact">Contact</a>
+          </div>
+        </article>
+
+        <footer class="footer">
+          <span>© <span id="year"></span> Daniel Emakporuena</span>
+          <a class="muted" href="index.html">Back to home</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
