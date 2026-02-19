@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banknote Dimensions: Wallet Pocket Sizing Case Study | Daniel Emakporuena</title>
+  <meta name="description" content="A data storytelling case study using banknote dimensions: spread analysis, currency variation, edge cases, and a practical wallet pocket recommendation." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">
+          <strong>Daniel Emakporuena</strong>
+          <small>Data · Power BI · SQL · Python</small>
+        </span>
+      </a>
+
+      <button class="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a class="btn btn--primary" href="index.html#featured">Home</a>
+        <a class="btn btn--primary" href="portfolio.html" class="nav__active">Portfolio</a>
+        <a class="btn btn--primary" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="caseTop">
+          <div>
+            <h1 class="pageTitle">Banknote Dimensions: Evidence Based Wallet Pocket Sizing</h1>
+            <p class="muted">
+              A practical case study using real banknote dimensions to quantify variation across currencies and denominations,
+              identify edge cases, and recommend a pocket size that reduces bending, protrusion, and insertion friction.
+            </p>
+
+            <div class="metaRow">
+              <span class="pill">Data storytelling</span>
+              <span class="pill">Exploratory analysis</span>
+              <span class="pill">Design recommendation</span>
+            </div>
+          </div>
+
+          <div class="caseCTA">
+            <a class="btn btn--classic" href="portfolio.html">Back to Portfolio</a>
+            <a class="btn btn--primary" href="assets/images/projects/banknote-story/01_scatter_length_width.png">Download main visual</a>
+          </div>
+        </div>
+
+        <figure class="figure figure--hero">
+          <img
+            src="assets/images/projects/banknote-story/01_scatter_length_width.png"
+            alt="Scatter plot of banknote length vs width"
+            loading="eager"
+          />
+          <figcaption>Executive overview: banknote length vs width (all records)</figcaption>
+        </figure>
+
+        <article class="caseBody">
+          <h2>Project context</h2>
+          <p>
+            A leather goods brand received customer complaints that some international banknotes bend, stick out, or feel
+            tight when inserted into wallet pockets. The design team wanted a single pocket standard that fits most notes
+            without making the wallet bulky.
+          </p>
+          <p>
+            This analysis uses a banknote dimension dataset (length and width in millimetres) to answer two practical questions:
+            what does “typical” look like, and what are the edge cases that drive real customer friction?
+          </p>
+
+          <div class="callout callout--note">
+            <h3 class="miniTitle">What this analysis is optimised for</h3>
+            <ul>
+              <li>Fast scanning of overall size spread and clustering</li>
+              <li>Clear view of variation by currency and denomination</li>
+              <li>Evidence based sizing recommendation with tolerances</li>
+              <li>Portfolio ready narrative with clean visuals</li>
+            </ul>
+          </div>
+
+          <hr class="rule" />
+
+          <h2>Overview</h2>
+          <p class="muted">
+            The story follows the same logic a stakeholder would use in a real design decision: start with the full spread,
+            quantify typical sizes, examine variation by currency, then design for edge cases with a practical tolerance.
+          </p>
+
+          <section class="storyBlock">
+            <h3 class="storyTitle">1) Explore the overall spread</h3>
+            <p>
+              The first view plots every banknote by length and width. Most notes cluster around the middle, but the outliers
+              are the real risk because they drive bending and protrusion complaints. This chart makes that immediately visible.
+            </p>
+
+            <div class="shotGrid">
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/banknote-story/shots/01_scatter_focus.png" alt="Scatter focus screenshot" loading="lazy" />
+                <figcaption>Focus: main cluster of common sizes</figcaption>
+              </figure>
+
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/banknote-story/shots/outlier.png" alt="Scatter outliers screenshot" loading="lazy" />
+                <figcaption>Outliers</figcaption>
+              </figure>
+            </div>
+
+            <div class="callout">
+              <h4 class="miniTitle">Interpretation</h4>
+              <p class="muted">
+                Designing around the average is not enough. The biggest notes create the user pain, so the design needs
+                a threshold approach: cover most notes and explicitly plan for edge cases.
+              </p>
+            </div>
+          </section>
+
+          <section class="storyBlock">
+            <h3 class="storyTitle">2) What does “typical” look like?</h3>
+            <p>
+              To quantify what is typical, we separate each note into a long side and a short side. The distribution view shows
+              where most notes sit and how far the tails extend. This supports a common product decision pattern: aim for a high
+              percentile (for example 95th) rather than building only for rare extremes.
+            </p>
+
+            <div class="shotGrid">
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/banknote-story/shots/02_hist_overview.png" alt="Histogram overview screenshot" loading="lazy" />
+                <figcaption>Overall: long side vs short side distributions</figcaption>
+              </figure>
+
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/banknote-story/shots/where both or neither.png" alt="Histogram 95th screenshot" loading="lazy" />
+                <figcaption>Decision lens:Where the unequal balances out</figcaption>
+              </figure>
+            </div>
+
+            <div class="callout">
+              <h4 class="miniTitle">Targeted Takeaway</h4>
+              <p class="muted">
+                Use percentile driven sizing to reduce bulk while still covering almost all real world notes.
+                This is more defensible than picking a single “standard” note as the reference.
+              </p>
+            </div>
+          </section>
+
+          <section class="storyBlock">
+            <h3 class="storyTitle">3) Variation by currency and denomination</h3>
+            <p>
+              Even within one currency, denominations can vary in size. The box plot below compares length distributions for
+              currencies with the most records in the dataset. Wider boxes and longer whiskers signal higher variation, meaning
+              a wallet designed around one denomination can still fail for others.
+            </p>
+
+            <div class="shotGrid">
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/banknote-story/shots/03_box_overview.png" alt="Boxplot overview screenshot" loading="lazy" />
+                <figcaption>Overview: length distribution by currency</figcaption>
+              </figure>
+
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/banknote-story/shots/03_box_variation.png" alt="Boxplot variation screenshot" loading="lazy" />
+                <figcaption>Variation: currencies with wider length spread</figcaption>
+              </figure>
+            </div>
+
+            <div class="callout">
+              <h4 class="miniTitle">What to do with this insight</h4>
+              <ul>
+                <li>Validate the design against currencies with the largest spread</li>
+                <li>Document which notes are “edge” sizes and why</li>
+                <li>Use the range of sizes to guide tolerance and usability clearance</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="storyBlock">
+            <h3 class="storyTitle">4) Designing for the edge cases</h3>
+            <p>
+              Wallet failures usually come from the largest notes. The range chart below shows how the long side varies across
+              currencies in the top 12 group. This view supports the final design decision: size the pocket for the maximums,
+              then add a practical clearance for stitching, lining, and a small stack of notes.
+            </p>
+
+            <div class="shotGrid">
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/banknote-story/shots/04_range_overview.png" alt="Range overview screenshot" loading="lazy" />
+                <figcaption>Range: long side spread by currency</figcaption>
+              </figure>
+
+              <figure class="figure figure--shot">
+                <img src="assets/images/projects/banknote-story/shots/04_range_extremes.png" alt="Range extremes screenshot" loading="lazy" />
+                <figcaption>Extremes: currencies that define the upper bound</figcaption>
+              </figure>
+            </div>
+
+            <div class="callout">
+              <h4 class="miniTitle">Sizing logic</h4>
+              <p class="muted">
+                Start from the dataset maximum note size, then add clearance so the pocket works in real use. Tight designs can
+                look good in a spec sheet but fail in day to day handling.
+              </p>
+            </div>
+          </section>
+
+          <hr class="rule" />
+
+            <div class="callout">
+              <h3 class="miniTitle">Why this works</h3>
+              <ul>
+                <li>Fits the largest notes plus clearance for stitching and lining</li>
+                <li>Reduces bending, protrusion, and insertion friction</li>
+                <li>Stays close enough to the main cluster to avoid unnecessary bulk</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ctaRow" style="margin-top: 14px;">
+            <a class="btn btn--primary" href="portfolio.html">Explore more projects</a>
+            <a class="btn btn--classic" href="index.html#contact">Contact</a>
+          </div>
+        </article>
+
+        <footer class="footer">
+          <span>© <span id="year"></span> Daniel Emakporuena</span>
+          <a class="muted" href="index.html">Back to home</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
