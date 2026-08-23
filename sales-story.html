@@ -6,28 +6,15 @@
   <title>Sales Intelligence Dashboard Case Study | Daniel Emakporuena</title>
   <meta name="description" content="A Power BI style sales intelligence case study: growth, margin pressure, returns risk, operations recovery, and channel mix improvements." />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="story.css" />
 </head>
 
-<body>
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="index.html">
-        <span class="brand__dot" aria-hidden="true"></span>
-        <span class="brand__text">
-          <strong>Daniel Emakporuena</strong>
-          <small>Data · Power BI · SQL · Python</small>
-        </span>
+<body class="story-page">
+  <header class="story-nav" id="top">
+    <div class="container story-nav__inner">
+      <a class="story-back" href="index.html#commercial" data-story-back aria-label="Back to the portfolio">
+        <span aria-hidden="true">←</span> Back
       </a>
-
-      <button class="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="nav" id="nav">
-        <a class="btn btn--primary" href="index.html#featured">Home</a>
-        <a class="btn btn--primary" href="portfolio.html" class="nav__active">Portfolio</a>
-        <a class="btn btn--primary" href="index.html#contact">Contact</a>
-      </nav>
     </div>
   </header>
 
@@ -50,10 +37,6 @@
             </div>
           </div>
 
-          <div class="caseCTA">
-            <a class="btn btn--classic" href="portfolio.html">Back to Portfolio</a>
-            <a class="btn btn--primary" href="assets/images/projects/sales-story/01_monthly_sales_profit_dynamic.png">Download main visual</a>
-          </div>
         </div>
 
         <!-- HERO IMAGE (smaller, like the example page) -->
@@ -276,16 +259,10 @@
             </div>
           </div>
 
-          <div class="ctaRow" style="margin-top: 14px;">
-            <a class="btn btn--primary" href="portfolio.html">Explore more projects</a>
-            <a class="btn btn--classic" href="index.html#contact">Contact</a>
-          </div>
         </article>
-
-        <footer class="footer">
-          <span>© <span id="year"></span> Daniel Emakporuena</span>
-          <a class="muted" href="index.html">Back to home</a>
-        </footer>
+        <div class="story-end">
+          <a class="story-top" href="#top"><span aria-hidden="true">↑</span> Back to top</a>
+        </div>
       </div>
     </section>
   </main>

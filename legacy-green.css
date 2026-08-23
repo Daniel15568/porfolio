@@ -1,0 +1,68 @@
+:root {
+  --bg: #f5f2e9;
+  --bg2: #ece8dc;
+  --panel: #fbfaf6;
+  --panel2: #e9eee7;
+  --border: #bdc9be;
+  --text: #173128;
+  --muted: #607066;
+  --perf: #2f5140;
+  --pos: #587461;
+  --warn: #9a7544;
+  --risk: #8a5149;
+  --shadow: 0 18px 42px rgba(34, 61, 48, .09);
+  --shadow2: 0 8px 24px rgba(34, 61, 48, .07);
+}
+
+body {
+  background: #f5f2e9;
+  color: var(--text);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+a:hover { color: #2f5140; }
+.muted, .lead, .eyebrow, .brand__text small, .nav a, .chip, .pill, .tag,
+.figure figcaption, .projectCard p, .linkCard span { color: var(--muted); }
+
+.topbar {
+  background: rgba(245, 242, 233, .92);
+  border-color: var(--border);
+  backdrop-filter: blur(12px);
+}
+.brand__dot { background: #587461; box-shadow: 0 0 0 6px rgba(88, 116, 97, .12); }
+.nav a:hover, .nav__active { background: #dfe7df; color: #173128 !important; }
+.navToggle { background: #fbfaf6; border-color: var(--border); }
+.navToggle span { background: #173128; }
+
+.btn, .filterBtn {
+  background: #fbfaf6;
+  color: #173128;
+  border-color: var(--border);
+  box-shadow: none;
+}
+.btn:hover, .filterBtn:hover { background: #e9eee7; }
+.btn--primary, .btn--classic, .filterBtn.is-active {
+  background: #2f5140;
+  color: #fbfaf6;
+  border-color: #2f5140;
+}
+.btn--primary:hover, .btn--classic:hover { background: #173f2e; color: #fff; }
+.btn--ghost { background: transparent; border-color: #587461; }
+
+.heroCard, .case, .storyBlock, .callout, .tile, .contact, .projectCard,
+.linkCard, .trustCard, .figure, .caseBody {
+  background: #fbfaf6;
+  color: #173128;
+  border-color: var(--border);
+  box-shadow: var(--shadow2);
+}
+.heroCard::before { background: radial-gradient(420px 220px at 25% 15%, rgba(88,116,97,.12), transparent 65%); }
+.case__top, .section--alt { background: #ece8dc; border-color: var(--border); }
+.chip, .pill, .tag { background: #e9eee7; border-color: var(--border); }
+.footer, .rule { border-color: var(--border); }
+.figure { background: #ece8dc; }
+.callout--note { border-left-color: #587461; }
+
+@media (max-width: 900px) {
+  .nav { background: rgba(245,242,233,.98); border-color: var(--border); }
+}
